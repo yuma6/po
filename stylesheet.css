@@ -1,0 +1,138 @@
+
+/*
+・1ページのサイト
+・自分の名前を入れる
+・1つ以上の画像を使う
+・文字に対して大きさやフォント、色など何らかの変更を加える*/
+/*
+・ヘッダー、ボディー、フッターという形式で作る
+・背景画像を指定する
+・ボタンを作り外部サイトにリンクさせる
+・ボタンにはhoverやactionなど動きを付け加える
+・ヘッダーを固定する*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:darkgray;
+    background-image: url(pktexture15361536_TP_V4.jpg);
+    background-size: 100%;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+}
+ul {
+    list-style: none;
+}
+/*header*/
+.b0 {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    z-index: 10;
+}
+.b1 {
+    float: left;
+}
+.b2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+    padding-top: 20px;
+}
+.b4 {
+    float: right;
+    margin: 0px;
+}
+.b5 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin: 30px 60px 0px 0px;
+}
+.b6 {
+    height: 100px;
+    float: right;
+    display: none;
+}
+/*header*//*body*/
+.a0 {
+    width: 100%;
+    margin: 200px 0px 0px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.a1 {
+    float: left;
+    margin: auto;
+    padding: auto;
+    width: 25%;
+}
+.a2 {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+
+}
+.a3 {
+    color: red;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+.a4 {
+    background-color: green;
+    height: 50px;
+    width: 20%;
+    opacity: 0.8;
+    border-radius: 50px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+.a4:hover {
+    background-color: green;
+    opacity: 1;
+}
+.a4:active {
+    background-color: red;
+}
+.a5 {
+    font-size: 20px;
+    color: black;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    
+}
+/*body*//*footer*/
+.c0 {
+    background-color: lightblue;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+.c2 {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+/*footer*/
