@@ -1,16 +1,3 @@
-
-/*
-・1ページのサイト
-・自分の名前を入れる
-・1つ以上の画像を使う
-・文字に対して大きさやフォント、色など何らかの変更を加える*/
-/*
-・ヘッダー、ボディー、フッターという形式で作る
-・背景画像を指定する
-・ボタンを作り外部サイトにリンクさせる
-・ボタンにはhoverやactionなど動きを付け加える
-・ヘッダーを固定する*/
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +6,6 @@ body {
     background-color:darkgray;
     background-image: url(pktexture15361536_TP_V4.jpg);
     background-size: 100%;
-    height: 1000px;
     width: 100%;
     position: absolute;
     margin: 0px;
@@ -27,8 +13,11 @@ body {
 ul {
     list-style: none;
 }
+.clear-float {
+    clear: both;
+}
 /*header*/
-.b0 {
+header {
     background-color: black;
     position: fixed;
     width: 100%;
@@ -36,10 +25,10 @@ ul {
     top: 0px;
     z-index: 10;
 }
-.b1 {
+.he-text-float {
     float: left;
 }
-.b2 {
+.he-text {
     color: white;
     font-weight: bold;
     font-size: 50px;
@@ -49,11 +38,11 @@ ul {
     margin: 0px 0px 0px 30px;
     padding-top: 20px;
 }
-.b4 {
+.he-items {
     float: right;
     margin: 0px;
 }
-.b5 {
+.he-item {
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -61,78 +50,78 @@ ul {
     float: left;
     margin: 30px 60px 0px 0px;
 }
-.b6 {
+.he-hamburger-img {
     height: 100px;
     float: right;
     display: none;
 }
-/*header*//*body*/
-.a0 {
+.he-area {
     width: 100%;
-    margin: 200px 0px 0px 0px;
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
+    height: 110px;
 }
-
-.a1 {
+/*header*//*body*/
+.bo-item {
     float: left;
     margin: auto;
     padding: auto;
     width: 25%;
-}
-.a2 {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: auto;
-
-}
-.a3 {
-    color: red;
-    font-size: 50px;
-    display: block;
     text-align: center;
 }
-.a4 {
+.bo-item-img {
+    width: 50%;
+}
+.bo-item-text {
+    color: red;
+}
+.bo-button {
+    display: block;
     background-color: green;
-    height: 50px;
-    width: 20%;
     opacity: 0.8;
     border-radius: 50px;
-    position: absolute;
-    left: 40%;
-    top: 50%;
+    height: 40px;
+    width: 100px;
+    margin: 30px auto;
 }
-.a4:hover {
+.bo-button:hover {
     background-color: green;
     opacity: 1;
 }
-.a4:active {
+.bo-button:active {
     background-color: red;
 }
-.a5 {
+.bo-button-text {
+    display: inline-block;
     font-size: 20px;
-    color: black;
-    border-radius: 50px;
-    display: block;
+    color: white;
+    padding: 5px;
+}
+.bo-button-position {
     text-align: center;
-    padding: 15px;
-    
+}
+#works {
+    text-align: center;
+    margin: 100px 0px;
+}
+.work {
+    margin: 20px;
 }
 /*body*//*footer*/
-.c0 {
+footer {
+    position: relative;
+    padding-bottom: 100px;
+}
+.fo-bg {
     background-color: lightblue;
     width: 100%;
     height: 100px;
     position: absolute;
     bottom: 0px;
 }
-.c2 {
+.fo-text {
     color: black;
     font-weight: bold;
     font-size: 50px;
     text-align: center;
-    margin: 0px;
     padding-top: 20px;
 }
 /*footer*/

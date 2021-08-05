@@ -1,16 +1,3 @@
-
-<!--
-・1ページのサイト
-・自分の名前を入れる
-・1つ以上の画像を使う
-・文字に対して大きさやフォント、色など何らかの変更を加える-->
-<!--
-・ヘッダー、ボディー、フッターという形式で作る
-・背景画像を指定する
-・ボタンを作り外部サイトにリンクさせる
-・ボタンにはhoverやactionなど動きを付け加える
-・ヘッダーを固定する-->
-
 <!DOCTYPE html>
 <html>
 <!--head-->
@@ -23,45 +10,68 @@
 <!--head-->
     <body>
 <!--header-->
-        <header class="b0">
-            <div class="b1">
-                <p class="b2">ヘッダー</p>
+        <div class="he-area"></div>
+        <header>
+            <div class="he-text-float">
+                <p class="he-text">ヘッダー</p>
             </div>
-            <div class="b3">
-                <img class="b6" src="sozai_cman_jp_20210519151659.png">
-                <ul class="b4">
-                    <li class="b5">あれ</li>
-                    <li class="b5">これ</li>
-                    <li class="b5">それ</li>
+            <div>
+                <img class="he-hamburger-img" src="sozai_cman_jp_20210519151659.png">
+                <ul class="he-items">
+                    <li class="he-item">あれ</li>
+                    <li class="he-item">これ</li>
+                    <li class="he-item">それ</li>
                 </ul>
             </div>
         </header>
-<!--header--><!--body-->
-        <div class="a0">
-            <div class="a1">
-                <img class="a2" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
-                <h1 class="a3">小林結眞</h1>
+<!--header-->
+<!--body-->
+        <div>
+            <div>
+                <div class="bo-item">
+                    <img class="bo-item-img" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
+                    <h1 class="bo-item-text">小林結眞</h1>
+                </div>
+                <div class="bo-item">
+                    <img class="bo-item-img" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
+                    <h1 class="bo-item-text">二つ</h1>
+                </div>
+                <div class="bo-item">
+                    <img class="bo-item-img" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
+                    <h1 class="bo-item-text">三つ</h1>
+                </div>
+                <div class="bo-item">
+                    <img class="bo-item-img" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
+                    <h1 class="bo-item-text">四つ</h1>
+                </div>
+                <div class="clear-float"></div>
             </div>
-            <div class="a1">
-                <img class="a2" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
-                <h1 class="a3">二つ</h1>
+            <div class="bo-button-position">
+                <a class="bo-button" href="https://www.google.com/">
+                    <span class="bo-button-text">ボタン</span>
+                </a>
             </div>
-            <div class="a1">
-                <img class="a2" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
-                <h1 class="a3">三つ</h1>
-            </div>
-            <div class="a1">
-                <img class="a2" src="TTCAYTHT2-U01VBK3TBPB-g7e3a29fe7b3-72.png">
-                <h1 class="a3">四つ</h1>
-            </div>
-            <p class="a4">
-               <a class="a5" href="https://www.google.com/">ボタン</a>
-            </p>
         </div>
-<!--body--><!--footer-->
-        <footer class="c0">
-            <div class="c1">
-                <p class="c2">フッター</p>
+        <div id="works">
+            <h1>
+                <p>works</p>
+            </h1>
+            <div>
+                <div class="work">
+                    <a href="https://yuma6.github.io/todolist_lms/">todolist</a>
+                    <p>todolistがあります</p>
+                </div>
+                <div class="work">
+                    <a href="https://yuma6.github.io/project_exam/">天気API</a>
+                    <p>明後日までの福岡の気温を確認出来ます</p>
+                </div>
+            </div>
+        </div>
+<!--body-->
+<!--footer-->
+        <footer>
+            <div class="fo-bg">
+                <p class="fo-text">フッター</p>
             </div>
         </footer>
 <!--footer-->
