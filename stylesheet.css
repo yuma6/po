@@ -16,6 +16,9 @@ ul {
 .clear-float {
     clear: both;
 }
+.works-page {
+    height: 100%;
+}
 /*header*/
 header {
     background-color: black;
@@ -107,7 +110,6 @@ header {
 }
 /*body*//*footer*/
 footer {
-    position: relative;
     padding-bottom: 100px;
 }
 .fo-bg {
