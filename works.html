@@ -1,10 +1,5 @@
-<!-- 「ヘッダー」の部分にPortfolioと書きましょうか　済
-「これ」-> ワークスへのリンク、「それ」を削除しましょうか　済
-「フッター」の背景色を黒に済、そしてコピーライトでもつけましょうか。「©2021 Yuma Kobayashi」済
-中央のボタンを削除済、背景画像を抜いて白抜きに済
-画像は...いったんコメントアウトしましょう。済 -->
 <!DOCTYPE html>
-<html class="works-page">
+<html class="page-height">
 <!--head-->
     <head>
         <meta charset="utf-8">
@@ -19,7 +14,7 @@
             crossorigin="anonymous" />
     </head>
 
-    <body class="works-page">
+    <body class="page-height">
         <div class="he-area"></div>
         <header>
             <div class="he-text-float">
@@ -33,7 +28,7 @@
                 </ul>
             </div>
         </header>
-        <table border="2px" id="works">
+        <table id="works">
             <caption>works</caption>
             <tr>
                 <th>work</th>
@@ -46,14 +41,13 @@
                 <td>Vue</td>
             </tr>
             <tr>
-                <td><a href="https://yuma6.github.io/project_exam/">天気API</a></td>
+                <td><a href="https://yuma6.github.io/project_exam/">天気APIアプリケーション</a></td>
                 <td>明後日までの福岡の平均気温、最高気温、最低気温が確認出来る天気API</td>
                 <td>Vue/vuetify/<a href="https://wttr.in/">天気API</a></td>
             </tr>
         </table>
         <footer>
             <div class="fo-bg">
-                <p class="fo-text">フッター</p>
                 <p class="fo-copy-right">©2021 Yuma Kobayashi</p>
             </div>
         </footer>

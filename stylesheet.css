@@ -11,7 +11,7 @@ ul {
 .clear-float {
     clear: both;
 }
-.works-page {
+.page-height {
     height: 100%;
 }
 /*header*/
@@ -83,12 +83,6 @@ footer {
     height: 100px;
     position: absolute;
     bottom: 0px;
-}
-.fo-text {
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
 }
 .fo-copy-right {
     color: white;
