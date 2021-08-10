@@ -78,13 +78,14 @@ footer {
     padding-bottom: 100px;
 }
 .fo-bg {
+    text-align: center;
     background-color: black;
     width: 100%;
-    height: 100px;
     position: absolute;
     bottom: 0px;
 }
 .fo-copy-right {
     color: white;
+    margin: 0px;
 }
 /*footer*/
