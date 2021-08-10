@@ -1,3 +1,8 @@
+<!-- 「ヘッダー」の部分にPortfolioと書きましょうか　済
+「これ」-> ワークスへのリンク、「それ」を削除しましょうか　済
+「フッター」の背景色を黒に済、そしてコピーライトでもつけましょうか。「©2021 Yuma Kobayashi」済
+中央のボタンを削除済、背景画像を抜いて白抜きに済
+画像は...いったんコメントアウトしましょう。済 -->
 <!DOCTYPE html>
 <html class="works-page">
 <!--head-->
@@ -6,42 +11,50 @@
         <title>小林　works</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+            integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+            crossorigin="anonymous" />
     </head>
 
     <body class="works-page">
         <div class="he-area"></div>
         <header>
             <div class="he-text-float">
-                <p class="he-text">ヘッダー</p>
+                <h1 class="he-text">Portfolio</h1>
             </div>
             <div>
                 <img class="he-hamburger-img" src="sozai_cman_jp_20210519151659.png">
                 <ul class="he-items">
                     <li class="he-item"><a href="index.html">トップページ</a></li>
-                    <li class="he-item">これ</li>
-                    <li class="he-item">それ</li>
+                    <li class="he-item"><a href="works.html">works</a></li>
                 </ul>
             </div>
         </header>
-
-        <div id="works">
-            <h1>
-                <p>works</p>
-            </h1>
-            <div>
-                <div class="work">
-                    <a href="https://yuma6.github.io/todolist_lms/">todolist</a>
-                    <p>作業状態の管理と状態によるフィルタリングの機能があるtodolist</p>
-                </div>
-                <div class="work">
-                    <a href="https://yuma6.github.io/project_exam/">天気API</a>
-                    <p>明後日までの福岡の平均気温、最高気温、最低気温が確認出来る天気API</p>
-                </div>
-            </div>
-        </div>
+        <table border="2px" id="works">
+            <caption>works</caption>
+            <tr>
+                <th>work</th>
+                <th>説明文</th>
+                <th>使用技術</th>
+            </tr>
+            <tr>
+                <td><a href="https://yuma6.github.io/todolist_lms/">todolist</a></td>
+                <td>追加した作業の状態の管理と状態によるフィルタリングの機能があるtodolist</td>
+                <td>Vue</td>
+            </tr>
+            <tr>
+                <td><a href="https://yuma6.github.io/project_exam/">天気API</a></td>
+                <td>明後日までの福岡の平均気温、最高気温、最低気温が確認出来る天気API</td>
+                <td>Vue/vuetify/<a href="https://wttr.in/">天気API</a></td>
+            </tr>
+        </table>
         <footer>
             <div class="fo-bg">
                 <p class="fo-text">フッター</p>
+                <p class="fo-copy-right">©2021 Yuma Kobayashi</p>
             </div>
         </footer>
     </body>
