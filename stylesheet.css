@@ -12,7 +12,8 @@ ul {
     height: 100%;
 }
 video {
-    width: 50%;
+    height: 128px;
+    width: 240px;
 }
 /*header*/
 header {
