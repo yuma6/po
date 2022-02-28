@@ -11,6 +11,9 @@ ul {
 .page-height {
     height: 100%;
 }
+video {
+    width: 50%;
+}
 /*header*/
 header {
     background-color: black;
@@ -57,13 +60,13 @@ header {
 }
 /*header*//*footer*/
 footer {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 .fo-bg {
     text-align: center;
     background-color: black;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
 }
 .fo-copy-right {
